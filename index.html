@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Office Data Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="./RB.jpg" alt="Logo" />
+      <span class="company-name">Real Beauty</span>
+    </div>
+    <h1>Post Office Data Management</h1>
+  </header>
+  
+  <!-- Input Fields Section -->
+<div class="form-container">
+  <div class="input-group">
+    <label for="fetch-by">Fetch Data By:</label>
+    <select id="fetch-by">
+      <option value="sr-no">Sr. No.</option>
+      <option value="order-id">Order ID</option>
+    </select>
+    <input type="text" placeholder="Enter Sr. No. or VPL No.">
+    <button id="fetch-btn">Fetch Data</button>
+  </div>
+
+  <div class="input-group">
+    <label for="status">Status:</label>
+   
+    <input type="date" id="status-date">
+    <button id="update-btn">Update</button>
+  </div>
+
+  <div class="input-group">
+    <label for="start-date">Start Date:</label>
+    <input type="date" id="start-date">
+    <label for="end-date">End Date:</label>
+    <input type="date" id="end-date">
+    <select id="status">
+      <option value="">All</option>
+      <option value="pending">Pending</option>
+      <option value="dispatched">Dispatched</option>
+      <option value="returned">Returned</option>
+    </select>
+    <button id="filter-btn">Filter</button>
+  </div>
+</div>
+
+
+  <!-- Data Table Section -->
+  <div class="data-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Booking Date</th>
+          <th>Dispatching Date</th>
+          <th>Sr. No.</th>
+          <th>Order ID</th>
+          <th>Customer Name</th>
+          <th>Contact</th>
+          <th>District</th>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <th>VPL Price</th>
+          <th>Agent Name</th>
+          <th>Status</th>
+          <th>Status Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data rows will be dynamically generated -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>© 2024 Post Office Data Management System. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
